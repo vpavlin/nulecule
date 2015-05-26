@@ -1,0 +1,17 @@
+---
+specversion: 0.0.1-alpha
+id: zookeeper-app
+
+metadata:
+  name: ZooKeeper App
+  appversion: 0.0.1
+  description: Atomic app for deploying a ZooKeeper
+graph:
+  zookeeper-app:
+    params:
+      image:
+        description: The ZooKeeper image
+        default: openshift/zookeeper-346-fedora20
+    artifacts:
+      openshift:
+        - file://artifacts/openshift/template.json
