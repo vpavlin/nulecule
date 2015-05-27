@@ -7,9 +7,9 @@ metadata:
   appversion: 0.0.1
   description: Atomic app for deploying a ZooKeeper
 graph:
-  zookeeper-app:
+  - name: zookeeper-app
     params:
-      image:
+      - name: image
         description: The ZooKeeper image
         default: openshift/zookeeper-346-fedora20
     artifacts:
